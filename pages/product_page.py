@@ -29,3 +29,11 @@ class ProductPage(BasePage):
 
     def check_button_card(self):
         assert self.is_element_present(*ProductPageLocators.ADD_CARD_LINK), "Button Card is not presented"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+           "Success message is presented, but should not be"
+
+    def should_be_closed_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+           "Success message is presented, but should be closed"

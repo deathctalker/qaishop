@@ -13,3 +13,4 @@ class ProductPageLocators(object):
     GOOD_NAME_IN_CARD = (By.CSS_SELECTOR, "div#messages > div:nth-child(1) div strong")
     GOOD_PRICE = (By.CSS_SELECTOR, "div.product_main p.price_color")
     GOOD_PRICE_IN_CARD = (By.CSS_SELECTOR, "div#messages > div:nth-child(3) div strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div#messages > div:nth-child(1) div strong")
